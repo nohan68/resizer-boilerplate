@@ -11,7 +11,7 @@ module.exports = {
    * `UserController.login()`
    */
   login: async function (req, res) {
-    passport.authenticate('local', { successRedirect: '/', failureRedirect: '/login' });
+    pass.authenticate('local', { successRedirect: '/', failureRedirect: '/login' });
   },
 
   /**
