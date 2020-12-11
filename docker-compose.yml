@@ -8,7 +8,15 @@ services:
     user: node
     working_dir: /home/node/app
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
     volumes:
       - ./:/home/node/app
-    command: "npm start"
+    command: "npm run dev"
+  bdd:
+    image: mysql
+    environment:
+      - MYSQL_USER=njaugey
+      - MYSQL_PASSWORD=0906
+      - MYSQL_DATABASE=BDD_njaugey
+      - MYSQL_ROOT_PASSWORD=root
+
