@@ -10,14 +10,16 @@
     "@sailshq/socket.io-redis": "^5.2.0",
     "bcrypt": "5.x",
     "grunt": "1.0.4",
-    "npm-watch": "^0.7.0",
+    "knex": "^0.21.15",
     "nodemon": "2.0.6",
+    "npm-watch": "^0.7.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "sails": "^1.4.0",
     "sails-hook-grunt": "^4.0.0",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^2.0.0",
+    "sails-mysql": "1.0.1",
     "watch": "^1.0.2"
   },
   "devDependencies": {

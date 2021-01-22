@@ -9,14 +9,17 @@ services:
     working_dir: /home/node/app
     environment:
       - NODE_ENV=development
+      - MYSQL_URL=mysql://njaugey:0906@bdd:3306/BDD_njaugey
     volumes:
       - ./:/home/node/app
     command: "npm run dev"
   bdd:
-    image: mysql
+    image: mysql:5.7
     environment:
       - MYSQL_USER=njaugey
       - MYSQL_PASSWORD=0906
       - MYSQL_DATABASE=BDD_njaugey
       - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./_docker/mysql:/var/lib/mysql
 
